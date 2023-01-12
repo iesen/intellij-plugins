@@ -1,5 +1,5 @@
 plugins {
-  id 'org.jetbrains.intellij' version '1.9.0'
+  id 'org.jetbrains.intellij' version '1.11.0'
   id 'java'
 }
 
@@ -28,7 +28,7 @@ def ideaPath = properties.getProperty('idea.path')
 
 intellij {
   if (ideaPath == null) {
-    version = '223-EAP-SNAPSHOT'
+    version = '2022.3'
   } else {
     localPath = ideaPath
   }
